@@ -1,9 +1,13 @@
 deps:
-	uv sync --all-groups --all-extras
+	@uv sync --all-groups --all-extras
 
-lint:
-	uv run ruff check
-	uv run ty check
+lint: deps
+	@uv run ruff check
+	@uv run ty check
 
-test:
-	uv run pytest
+test: deps
+	@uv run pytest
+
+
+build: deps
+	@uv build

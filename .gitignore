@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Rust / Cargo
+/target/
+
+# maturin
+*.so
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*~
+
+# Misc
+.DS_Store
